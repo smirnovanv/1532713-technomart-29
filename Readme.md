@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Наталья Смирнова](https://up.htmlacademy.ru/htmlcss/29/user/1532713).
-* Наставник: `Неизвестно`.
+* Наставник: `[Александр Панасюк](https://htmlacademy.ru/profile/sasha_oldsport)`.
 
 ---
 
