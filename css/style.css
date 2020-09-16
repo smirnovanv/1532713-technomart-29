@@ -1,0 +1,748 @@
+
+:root {
+    --white: #FFFFFF;
+    --tinted-white-address: #F3F7F9;  /*адрес в футере*/
+    --almost-white-menu: #F1F5F7;  /*меню в футере*/
+    --black: #000000;
+    --unit-light-gray: #F2F6F8;
+    --background-light-gray: #F1F5F7;
+    --gray: #A9A9A9;
+    --medium-gray: #C5C5C5;
+    --symbol-light-gray: #C1C6CE; /*стилизация хлебных крошек*/
+    --lighter-medium-gray: #E5E5E5;
+    --light-gray-item-border:  #EAEAEA;
+    --dark-gray: #293449;
+    --blue-gray: #32425C;
+    --darker-blue-gray: #161D29;
+    --red: #EE3643;
+    --darker-red: #CA2C37;
+    --darkest-red: #BA2732;
+    --green: #63A63E;
+    --bright-green: #5FBB2D;
+    --dark-green: #518534;
+    --light-green: #8ED78F;
+    --beige: #F7F3EC;
+    --beige-yellow: #FFD180;
+    --yellow: #FFBF47;
+    --lighter-yellow: #FFC047;
+    --blue: #3BBCE3;
+    --violet: #DC91D8;
+
+    /*прозрачные цвета*/
+    --transparent-white:  rgba(255,255,255,0.5);
+    --less-transparent-white: rgba(255,255,255,0.3);
+    --transparent-superlight-gray: rgba(197,197,197,0.3);
+    --transparent-light-gray: rgba(169,169,169,0.3);
+    --transparent-gray: rgba(0, 0, 0, 0.25);
+    --transparent-almost-white: rgba(241, 245, 247, 0.5);
+    --transparent-yellow: rgba(255, 209, 128, 0.5);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-body {
+   min-width: 960px;
+   margin: 0;
+   padding: 0;
+   font-family: Cuprum, sans-serif;
+   font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/*header*/
+
+.header-top {
+    background-color: var(--dark-gray);
+    color: var(--white);
+}
+
+.header-logo {
+    background-color: var(--red);
+}
+
+.header-logo:active {
+    background-color: var(--darkest-red);
+}
+
+.header-top a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.marks:active {
+    background-color: var(--darker-blue-gray);
+    color: var(--transparent-white);
+}
+
+.cart:active {
+    background-color: var(--darker-blue-gray);
+    color: var(--transparent-white);
+}
+
+.search {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    font-family: Cuprum, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+}
+
+.search:focus {
+    background-color: var(--white);
+    color: var(--black);
+    font-family: Cuprum, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    outline: none;
+}
+
+.search::placeholder {
+    color: var(--white);
+    font-family: Cuprum, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.order {
+    background-color: var(--green);
+}
+
+.order:hover {
+    background-color: var(--bright-green);
+}
+
+.order:active {
+    background-color: var(--dark-green);
+    color: var(--transparent-white);
+}
+
+.header-bottom {
+    background-color: var(--background-light-gray);
+}
+
+.introduction {
+    color: var(--red);
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.header-tel {
+    color: var(--red);
+    text-decoration: none;
+    border: 3px solid var(--white);
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.header-tel:hover,
+.header-tel:active {
+    color: var(--red);
+    text-decoration: none;
+}
+
+.header-address {
+    color: var(--blue-gray);
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.login {
+    text-decoration: none;
+    color: var(--black);
+    background: var(--white);
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.login:hover {
+    color: var(--red);
+}
+
+.login:active {
+    color: var(--medium-gray);
+}
+
+.registration {
+    text-decoration: none;
+    color: var(--black);
+    background: var(--white);
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.registration:hover {
+    color: var(--red);
+}
+
+.registration:active {
+    color: var(--medium-gray);
+}
+
+.header-nav-menu {
+    color: var(--white);
+    background-color: var(--blue-gray);
+}
+
+.header-nav-menu li {
+    list-style: none;
+}
+
+.header-nav-menu a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.header-nav-menu-button:hover {
+    background-color: var(--dark-gray);
+}
+
+.header-nav-menu-button:active {
+    background-color: var(--dark-gray);
+    color: var(--transparent-white);
+}
+
+/*header catalog.html*/
+.customer-name {
+  background-color: var(--white);
+  text-decoration: none;
+  color: var(--black);
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.customer-name:hover {
+  color: var(--black);
+}
+
+.customer-name:active {
+  color: var(--medium-gray);
+}
+
+.my-orders {
+  color: var(--blue-gray);
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.my-orders:hover {
+  color: var(--red);
+}
+
+.my-orders:active {
+  color: var(--medium-gray);
+}
+
+.my-account {
+  color: var(--blue-gray);
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.my-account:hover {
+  color: var(--red);
+}
+
+.my-account:active {
+  color: var(--medium-gray);
+}
+/*товары и услуги*/
+
+.featured {
+    color: var(--white);
+}
+
+.featured-section {
+    list-style: none;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.featured-section a {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--less-transparent-white);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+}
+
+.featured-section a:hover {
+    background-color: var(--transparent-superlight-gray);
+    color: var(--white);
+}
+
+.featured-section a:active {
+    background-color: var(--transparent-light-gray);
+}
+
+.materials-section {
+    background-color: var(--yellow);
+}
+
+.instruments-section {
+    background-color: var(--blue);
+}
+
+.tech-section {
+    background-color: var(--violet);
+}
+
+.discount-section {
+    background-color: var(--light-green);
+}
+
+.delivery-section {
+    background-color: var(--lighter-yellow);
+}
+
+.featured-unit-text {
+    background-color: var(--transparent-gray);
+}
+
+.featured-unit-text h3 {
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.simple-button {
+    background-color: var(--red);
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.simple-button:hover {
+    background-color: var(--darker-red);
+    color: var(--white);
+}
+
+.simple-button:active {
+    background-color: var(--darkest-red);
+}
+
+/*популярные товары*/
+
+.section-name {
+    background-color: var(--beige);
+    text-transform: uppercase;
+}
+
+.section-name h2 {
+    color: var(--blue-gray);
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.item-card {
+    list-style: none;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    border: 1px solid var(--light-gray-item-border);
+    background: var(--white);
+}
+
+.item-card h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.former-price {
+    color: var(--gray);
+}
+
+.price-sticker {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+button,
+button:active,
+button:focus {
+    outline: none;
+}
+
+.purchase-button {
+    color: var(--white);
+    background-color: var(--green);
+    border: none;
+    text-transform: uppercase;
+    font-family: Cuprum, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.purchase-button:hover {
+    background-color: var(--bright-green);
+}
+
+.purchase-button:active {
+    background-color: var(--dark-green);
+}
+
+.mark-button {
+    color: var(--blue-gray);
+    background-color: var(--white);
+    border: 3px solid var(--green);
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-family: Cuprum, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.mark-button:hover {
+    border: 3px solid #32425C;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.mark-button:active {
+    border: 3px solid  #98a0ad;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color:  #98a0ad;
+}
+
+/*Популярные производители*/
+.manufacturer-card {
+    list-style: none;
+    border: 1px solid var(--light-gray-item-border);
+    background: var(--white);
+}
+
+/*Сервисы*/
+.service {
+    background-color: var(--background-light-gray);
+}
+
+.service-general {
+    color: var(--black);
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.service-general h2 {
+    font-family: "Cuprum", sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.service-button {
+    background-color: var(--blue-gray);
+    border: none;
+    color: var(--white);
+    font-family: "Cuprum", sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+
+}
+
+.service-button:hover {
+    background-color: var(--dark-gray);
+}
+
+.service-button:active {
+    background-color: var(--white);
+    color: var(--blue-gray);
+}
+
+.service-subsection {
+    color: var(--black);
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 24px;
+
+}
+
+.service-subsection h3 {
+    color: var(--blue-gray);
+    font-family: "Cuprum", sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+/*Компания Техномарт, о компании*/
+
+.about-company {
+    color: var(--black);
+}
+
+.about-company h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.about-company p {
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.transport-list {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+
+}
+
+.transport-list li::before {
+    content: "\2014";  /*заменить на изображение?*/
+    color: var(--red);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*Контакты*/
+.contacts p {
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.contacts h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+/*Страница каталога - наполнение*/
+.breadcrumbs li {
+  list-style: none;
+}
+
+.breadcrumbs-element {
+  text-decoration: none;
+  color: var(--black);
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.breadcrumbs-element:hover {
+  color: var(--black);
+}
+
+.breadcrumbs-element:click {
+  color: var(--black);
+}
+
+.unit-name {
+  background-color: var(--unit-light-gray);
+  color: var(--blue-gray);
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter-name {
+  font-family: PT Sans;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--beige);
+}
+
+.sorting-name {
+  font-family: PT Sans;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--beige);
+}
+
+.pagination {
+  font-family: PT Sans;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  list-style: none;
+
+}
+
+.page-number {
+  text-decoration: none;
+  color: var(--black);
+  background-color: var(--white);
+  border: 1px solid var(--lighter-medium-gray);
+  border-radius: 2px;
+}
+
+.page-number:hover {
+  color: var(--black);
+  border: 1px solid var(--medium-gray);
+  border-radius: 2px;
+}
+
+.page-number:active {
+  color: var(--black);
+  border: 1px solid var(--red);
+  border-radius: 2px;
+}
+
+.about-unit-items {
+  background-color: var(--background-light-gray);
+  color: var(--black);
+}
+
+.about-unit-items h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.about-unit-items p {
+  font-family: PT Sans;
+  font-weight: normal;
+font-size: 13px;
+line-height: 24px;
+}
+
+/*Футер*/
+.footer-top {
+    background-color: var(--blue-gray);
+}
+
+.footer-logo {
+    background-color: var(--red);
+}
+
+.footer-logo:active {
+    background-color: var(--darkest-red);
+}
+
+
+.footer-address-tel {
+    color: var(--tinted-white-address);
+}
+
+.footer-nav-menu {
+    list-style: none;
+}
+
+.footer-nav-menu a {
+    text-decoration:none;
+    color: var(--almost-white-menu);
+}
+
+.footer-nav-menu a:hover {
+    text-decoration: underline;
+    color: var(--almost-white-menu);
+}
+
+.footer-nav-menu a:active {
+    text-decoration:none;
+    color: var(--transparent-almost-white);
+}
+
+.footer-submenu {
+    list-style: none;
+}
+
+.footer-submenu a {
+    text-decoration: none;
+    color: var(--beige-yellow);
+}
+
+.footer-submenu a:hover {
+    text-decoration: underline;
+    color: var(--beige-yellow);
+}
+
+.footer-submenu a:active {
+    text-decoration: none;
+    color: var(--transparent-yellow);
+}
+
+.footer-bottom {
+    background-color: var(--dark-gray);
+}
+
+.copyright {
+    color: var(--white);
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.social-networks {
+    list-style: none;
+}
+
+.social-networks a {
+text-decoration: none;
+color: var(--white);
+}
+
+.email-us {
+    color: var(--white);
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.email-us-link {
+    color: var(--beige-yellow);
+    text-decoration: none;
+}
+
+.email-us-link:hover {
+    color: var(--beige-yellow);
+    text-decoration: underline;
+}
+
+.email-us-link:active {
+    color: var(--red);
+    text-decoration: none;
+}
+
+.developer {
+    color: var(--white);
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.developer-link {
+    color: var(--beige-yellow);
+    text-decoration: none;
+}
+
+.developer-link:hover {
+    color: var(--beige-yellow);
+    text-decoration: underline;
+}
+
+.developer-link:active {
+    color: var(--red);
+    text-decoration: none;
+}
