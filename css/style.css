@@ -433,19 +433,24 @@ button:focus {
     background-color: var(--background-light-gray);
 }
 
-.service-general {
-    color: var(--black);
-    font-family: "PT Sans";
-    font-size: 13px;
-    line-height: 24px;
+.service-subsection {
+  list-style: none;
 }
 
-.service-general h2 {
+.section-title {
     font-family: "Cuprum", sans-serif;
     font-weight: normal;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+    color: var(--black);
+}
+
+.basic-text {
+    color: var(--black);
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 24px;
 }
 
 .service-button {
@@ -468,15 +473,7 @@ button:focus {
     color: var(--blue-gray);
 }
 
-.service-subsection {
-    color: var(--black);
-    font-family: "PT Sans";
-    font-size: 13px;
-    line-height: 24px;
-
-}
-
-.service-subsection h3 {
+.services-title {
     color: var(--blue-gray);
     font-family: "Cuprum", sans-serif;
     font-weight: normal;
@@ -487,28 +484,11 @@ button:focus {
 
 /*Компания Техномарт, о компании*/
 
-.about-company {
-    color: var(--black);
-}
-
-.about-company h2 {
-    text-transform: uppercase;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 30px;
-}
-
-.about-company p {
-    font-family: "PT Sans";
-    font-size: 13px;
-    line-height: 24px;
-}
-
 .transport-list {
     list-style-type: none;
     margin-left: 0;
     padding: 0;
-
+    color: var(--black);
 }
 
 .transport-list li::before {
@@ -519,18 +499,6 @@ button:focus {
 }
 
 /*Контакты*/
-.contacts p {
-    font-family: "PT Sans";
-    font-size: 13px;
-    line-height: 24px;
-}
-
-.contacts h2 {
-    text-transform: uppercase;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 30px;
-}
 
 /*Страница каталога - наполнение*/
 .breadcrumbs li {
@@ -550,7 +518,7 @@ button:focus {
   color: var(--black);
 }
 
-.breadcrumbs-element:click {
+.breadcrumbs-element:active {
   color: var(--black);
 }
 
@@ -611,23 +579,12 @@ button:focus {
   border-radius: 2px;
 }
 
+.page-number.active {
+  background-color: var(--red);
+}
+
 .about-unit-items {
   background-color: var(--background-light-gray);
-  color: var(--black);
-}
-
-.about-unit-items h2 {
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-  font-weight: normal;
-}
-
-.about-unit-items p {
-  font-family: PT Sans;
-  font-weight: normal;
-font-size: 13px;
-line-height: 24px;
 }
 
 /*Футер*/

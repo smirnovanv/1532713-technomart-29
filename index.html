@@ -15,12 +15,12 @@
 <body class="page-body">
   <header>
     <div class="header-top">
-      <a class="header-top-element header-logo"><img src="https://via.placeholder.com/108x18"
+      <a class="header-logo"><img src="https://via.placeholder.com/108x18"
           alt="Логотип Интернет-магазина «Техномарт»"></a>
-      <form class="header-top-element"><input class="search" type="search" placeholder="Поиск:"></form>
-      <a class="header-top-element marks" href="blank.html">Закладки: 0</a>
-      <a class="header-top-element cart" href="blank.html">Корзина: 0</a>
-      <a class="header-top-element order" href="blank.html">Оформить заказ</a>
+      <form><input class="search" type="search" placeholder="Поиск:"></form>
+      <a class="marks" href="blank.html">Закладки: 0</a>
+      <a class="cart" href="blank.html">Корзина: 0</a>
+      <a class="order" href="blank.html">Оформить заказ</a>
     </div>
     <div class="header-bottom">
       <p class="introduction">Интернет-магазин строительных материалов и инструментов для ремонта</p>
@@ -94,10 +94,9 @@
             <h3>Перфоратор BOSCH BFG 3000</h3>
             <img src="https://via.placeholder.com/127x112" alt="Перфоратор BOSCH BFG 3000">
             <p class="former-price"><del>22500 Р.</del></p>
-            <p class="price-sticker">15500 Р.
-            <p>
-              <button class="purchase-button">Купить</button>
-              <button class="mark-button">В закладки</button>
+            <p class="price-sticker">15500 Р.</p>
+            <button class="purchase-button">Купить</button>
+            <button class="mark-button">В закладки</button>
           </article>
         </li>
 
@@ -197,46 +196,48 @@
     </section>
     <section class="service">
       <div class="service-general">
-        <h2>Сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами!
+        <h2 class="section-title">Сервисы</h2>
+        <p class="basic-text">Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
       </div>
       <button class="button service-button delivery-button">Доставка</button>
       <button class="button service-button guarantee-button">Гарантия</button>
       <button class="button service-button credit-button">Кредит</button>
-      <div class="service-subsection delivery-subsection">
-        <h3>Доставка</h3>
-        <p>Мы с удовольствием доставим ваш товар прямо<br>
-          к вашему подъезду совершенно бесплатно!<br>
-          Ведь мы неплохо заработаем,<br>
-          поднимая его на ваш этаж!
-        </p>
-      </div>
-      <div class="service-subsection guarantee-subsection">
-        <h3>Гарантия</h3>
-        <p>
-          Если купленный у нас товар поломается или заискрит,
-          а также в случае пожара, спровоцированного его возгоранием,
-          вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший
-          товар на новый.
-          Дом уж восстановите как-нибудь сами.
-        </p>
-      </div>
-      <div class="service-subsection credit-subsection">
-        <h3>Кредит</h3>
-        <p>Залезть в долговую яму стало проще!
-          Кредитные консультанты придут вам на помощь.</p>
-      </div>
+      <ul>
+        <li class="service-subsection delivery-subsection">
+          <h3 class="services-title">Доставка</h3>
+          <p class="basic-text">Мы с удовольствием доставим ваш товар прямо<br>
+            к вашему подъезду совершенно бесплатно!<br>
+            Ведь мы неплохо заработаем,<br>
+            поднимая его на ваш этаж!
+          </p>
+        </li>
+        <li class="service-subsection guarantee-subsection">
+          <h3 class="services-title">Гарантия</h3>
+          <p class="basic-text">
+            Если купленный у нас товар поломается или заискрит,
+            а также в случае пожара, спровоцированного его возгоранием,
+            вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший
+            товар на новый.
+            Дом уж восстановите как-нибудь сами.
+          </p>
+        </li>
+        <li class="service-subsection credit-subsection">
+          <h3 class="services-title">Кредит</h3>
+          <p class="basic-text">Залезть в долговую яму стало проще!
+            Кредитные консультанты придут вам на помощь.</p>
+        </li>
+      </ul>
     </section>
     <section class="about-company">
-      <h2>Компания «Техномарт»</h2>
-      <p>Настоящий мужской шоппинг начинается здесь!
+      <h2 class="section-title">Компания «Техномарт»</h2>
+      <p class="basic-text">Настоящий мужской шоппинг начинается здесь!
         Огромный выбор товаров для ремонта и
         строительства не оставит равнодушными
         любителей сэкономить на гастарбайтерах.
       </p>
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+      <p class="basic-text">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
         Техномарт работает со многими транспортными компаниями:</p>
       <ul class="transport-list">
         <li>Деловые линии</li>
@@ -246,8 +247,8 @@
       <a class="simple-button" href="blank.html">Подробнее о компании</a>
     </section>
     <section class="contacts">
-      <h2>Контакты</h2>
-      <p>Вы можете забрать товар сами,
+      <h2 class="section-title">Контакты</h2>
+      <p class="basic-text">Вы можете забрать товар сами,
         заехав в наш офис:</p>
       <!--Н:здесь будет карта-->
       <a class="simple-button" href="blank.html">Заблудились? Напишите нам!</a>
