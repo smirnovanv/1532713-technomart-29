@@ -77,8 +77,26 @@ min-height: 100%;
   color: var(--white);
 }
 
+.header-top-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 42px;
+}
+
 .header-logo {
   background-color: var(--red);
+  width: 220px;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  height: 47px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo img {
+  padding-bottom: 5px;
+  padding-right: 2px;
 }
 
 .header-logo:active {
@@ -90,9 +108,24 @@ min-height: 100%;
   text-decoration: none;
 }
 
+.marks {
+  width: 150px;
+  justify-content: center;
+  display: flex;
+  padding-top: 10px;
+}
+
 .marks:active {
   background-color: var(--darker-blue-gray);
   color: var(--transparent-white);
+}
+
+.cart {
+  width: 136px;
+  justify-content: center;
+  display: flex;
+  padding-top: 10px;
+
 }
 
 .cart:active {
@@ -107,8 +140,14 @@ min-height: 100%;
   font-size: 18px;
   line-height: 24px;
   border: none;
+  width: 100%;
+  height: 100%;
+
 }
 
+.header-top-wrapper form {
+  flex-grow: 1;
+}
 .search:focus {
   background-color: var(--white);
   color: var(--black);
@@ -127,6 +166,18 @@ min-height: 100%;
 
 .order {
   background-color: var(--green);
+  width: 150px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+}
+
+.order p {
+padding: 0;
+padding-top: 1px;
+padding-left: 3px;
+margin: 0;
 }
 
 .order:hover {
@@ -139,15 +190,30 @@ min-height: 100%;
 }
 
 .header-bottom {
-  background-color: var(--background-light-gray);
+  background-color: #F3F7F9;
 }
 
+.header-info {
+  display: flex;
+  flex-direction: row;
+  height: 140px;
+
+}
 
 .introduction {
   color: var(--red);
   font-style: italic;
   font-size: 16px;
-  line-height: 23px;
+  line-height: 24px;
+  width: 210px;
+  height: 71px;
+  margin-top: 42px;
+  margin-left: 30px;
+}
+
+.header-contacts {
+  margin-top: 54px;
+
 }
 
 .header-tel {
@@ -156,7 +222,14 @@ min-height: 100%;
   border: 3px solid var(--white);
   font-size: 21px;
   line-height: 30px;
+  font-weight: 700;
+  margin-left: 80px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  padding-right: 40px;
+  padding-left: 74px;
 }
+
 
 .header-tel:hover,
 .header-tel:active {
@@ -168,6 +241,8 @@ min-height: 100%;
   color: var(--blue-gray);
   font-size: 14px;
   line-height: 24px;
+  margin-left: 90px;
+  margin-top: 10px;
 }
 
 .login {
@@ -176,6 +251,13 @@ min-height: 100%;
   background: var(--white);
   font-size: 21px;
   line-height: 21px;
+  width: 121px;
+  height: 45px;
+  margin-top: 46px;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login:hover {
@@ -192,6 +274,14 @@ min-height: 100%;
   background: var(--white);
   font-size: 21px;
   line-height: 21px;
+  width: 150px;
+  height: 45px;
+  margin-top: 46px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .registration:hover {
@@ -202,22 +292,65 @@ min-height: 100%;
   color: var(--medium-gray);
 }
 
+.personal {
+  display: flex;
+  flex-wrap: wrap;
+  width: 299px;
+  height: 70px;
+  margin-left: 50px;
+  margin-top: 46px;
+}
+
+.customer-name {
+  width: 299px;
+  height: 45px;
+  margin-bottom: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-orders {
+  margin-left: 44px;
+  margin-right: 32px;
+}
 .header-nav-menu {
   color: var(--white);
   background-color: var(--blue-gray);
+  margin-bottom: 60px;
 }
 
 .header-nav-menu-list {
-  margin: 0;
+  height: 60px;
+  margin-left: 25px;
+  margin-right: 25px;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-nav-menu-list li {
+  padding-top: 16px;
+  flex-grow: 1;
+  justify-content: center;
+  display: flex;
+}
+
+
+.header-nav-menu-list li:hover {
+  background-color: var(--dark-gray);
 }
 
 .header-nav-menu a {
   color: var(--white);
   text-decoration: none;
+
 }
 
+.header-nav-menu-button {
+
+}
 .header-nav-menu-button:hover {
   background-color: var(--dark-gray);
 }
@@ -680,23 +813,56 @@ background-color: var(--background-light-gray);
   background-color: var(--blue-gray);
 }
 
+.footer-top-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
 .footer-logo {
   background-color: var(--red);
+  width: 220px;
+  height: 68px;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-logo:active {
   background-color: var(--darkest-red);
 }
 
+.footer-logo img {
+  padding-bottom: 4px;
+
+}
 
 .footer-address-tel {
   color: var(--tinted-white-address);
+  order: 3;
+  margin-top: 23px;
+  margin-left: 3px;
+  margin-bottom: 54px;
 }
 
 .footer-nav-menu {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 37px;
+  margin-left: 173px;
+
+
+}
+
+.footer-nav-menu li {
+  margin-right: 58px;
+
+}
+
+.footer-nav-menu li:last-child {
+  margin-right: 0;
 }
 
 .footer-nav-menu a {
@@ -718,6 +884,18 @@ background-color: var(--background-light-gray);
   list-style: none;
   margin: 0;
   padding: 0;
+  order: 3;
+  display: flex;
+  margin-left: 92px;
+}
+
+.footer-submenu li {
+  margin-right: 58px;
+  margin-top: 30px;
+}
+
+.footer-submenu li:last-child {
+  margin-right: 0;
 }
 
 .footer-submenu a {
@@ -739,27 +917,38 @@ background-color: var(--background-light-gray);
   background-color: var(--dark-gray);
 }
 
+.footer-bottom-wrapper {
+  display: flex;
+
+}
+
 .copyright {
   color: var(--white);
   font-size: 16px;
   line-height: 18px;
+  margin-top: 36px;
+  margin-bottom: 34px;
 }
 
 .social-networks {
   list-style: none;
   margin: 0;
   padding: 0;
+  align-self: center;
 }
 
 .social-networks a {
 text-decoration: none;
 color: var(--white);
+margin-left: 150px;
 }
 
 .email-us {
   color: var(--white);
   font-size: 16px;
   line-height: 18px;
+  margin-top: 35px;
+  margin-left: auto;
 }
 
 .email-us-link {
@@ -781,6 +970,9 @@ color: var(--white);
   color: var(--white);
   font-size: 16px;
   line-height: 18px;
+  margin-top: 35px;
+  margin-left: 52px;
+  margin-right: 15px;
 }
 
 .developer-link {
