@@ -196,8 +196,8 @@ margin: 0;
 .header-info {
   display: flex;
   flex-direction: row;
-  height: 140px;
-
+  padding-top: 42px;
+  padding-bottom: 25px;
 }
 
 .introduction {
@@ -206,14 +206,8 @@ margin: 0;
   font-size: 16px;
   line-height: 24px;
   width: 210px;
-  height: 71px;
-  margin-top: 42px;
+  margin: 0;
   margin-left: 30px;
-}
-
-.header-contacts {
-  margin-top: 54px;
-
 }
 
 .header-tel {
@@ -228,6 +222,7 @@ margin: 0;
   padding-bottom: 8px;
   padding-right: 40px;
   padding-left: 74px;
+  display: block;
 }
 
 
@@ -242,7 +237,7 @@ margin: 0;
   font-size: 14px;
   line-height: 24px;
   margin-left: 90px;
-  margin-top: 10px;
+  margin-top: 3px;
 }
 
 .login {
@@ -253,7 +248,7 @@ margin: 0;
   line-height: 21px;
   width: 121px;
   height: 45px;
-  margin-top: 46px;
+  margin-top: 4px;
   margin-left: auto;
   display: flex;
   justify-content: center;
@@ -276,12 +271,11 @@ margin: 0;
   line-height: 21px;
   width: 150px;
   height: 45px;
-  margin-top: 46px;
+  margin-top: 4px;
   margin-left: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .registration:hover {
@@ -298,7 +292,6 @@ margin: 0;
   width: 299px;
   height: 70px;
   margin-left: 50px;
-  margin-top: 46px;
 }
 
 .customer-name {
@@ -321,36 +314,28 @@ margin: 0;
 }
 
 .header-nav-menu-list {
-  height: 60px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-}
-
-.header-nav-menu-list li {
-  padding-top: 16px;
-  flex-grow: 1;
   justify-content: center;
-  display: flex;
 }
 
-
-.header-nav-menu-list li:hover {
-  background-color: var(--dark-gray);
+.header-nav-menu-button {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 20px;
+  padding-left: 28px;
+  padding-right: 28px;
 }
 
 .header-nav-menu a {
   color: var(--white);
   text-decoration: none;
-
 }
 
-.header-nav-menu-button {
-
-}
 .header-nav-menu-button:hover {
   background-color: var(--dark-gray);
 }
@@ -405,11 +390,6 @@ color: var(--red);
 
 .my-account:active {
 color: var(--medium-gray);
-}
-
-.main-title {
-  width: 940px;
-  margin: 0 auto;
 }
 
 /*товары и услуги*/
@@ -919,6 +899,8 @@ background-color: var(--background-light-gray);
 
 .footer-bottom-wrapper {
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 26px;
 
 }
 
@@ -926,13 +908,13 @@ background-color: var(--background-light-gray);
   color: var(--white);
   font-size: 16px;
   line-height: 18px;
-  margin-top: 36px;
-  margin-bottom: 34px;
+  margin-top: 5px;
 }
 
 .social-networks {
   list-style: none;
   margin: 0;
+  margin-left: 150px;
   padding: 0;
   align-self: center;
 }
@@ -940,15 +922,14 @@ background-color: var(--background-light-gray);
 .social-networks a {
 text-decoration: none;
 color: var(--white);
-margin-left: 150px;
 }
 
 .email-us {
   color: var(--white);
   font-size: 16px;
   line-height: 18px;
-  margin-top: 35px;
   margin-left: auto;
+  margin-top: 5px;
 }
 
 .email-us-link {
@@ -970,9 +951,9 @@ margin-left: 150px;
   color: var(--white);
   font-size: 16px;
   line-height: 18px;
-  margin-top: 35px;
   margin-left: 52px;
   margin-right: 15px;
+  margin-top: 5px;
 }
 
 .developer-link {
