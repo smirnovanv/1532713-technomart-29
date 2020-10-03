@@ -46,41 +46,65 @@
             <li><a class="header-nav-menu-button" href="blank.html">Спецпредложения</a></li>
             <li><a class="header-nav-menu-button" href="blank.html">Доставка</a></li>
             <li><a class="header-nav-menu-button" href="blank.html">Контакты</a></li>
-           </ul>
+          </ul>
         </nav>
       </div>
     </div>
   </header>
   <main>
-    <h1>Интернет-магазин «Техномарт»</h1>
+    <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
     <section class="featured">
-      <div class="wrapper">
-        <h2>Товары и услуги</h2>
+      <div class="wrapper featured-table">
+        <h2 class="visually-hidden">Товары и услуги</h2>
         <ul class="featured-list">
-          <li class="featured-section materials-section">Материалы <a href="blank.html">на любой вкус</a></li>
-          <li class="featured-section instruments-section">Инструмент <a href="blank.html">на все случаи жизни</a></li>
-          <li class="featured-section tech-section">Техника <a href="blank.html">для стройки</a></li>
-          <li class="featured-section discount-section">Скидки 50% <a href="blank.html">на 350 товаров</a></li>
-          <li class="featured-section delivery-section">Доставка <a href="blank.html">бесплатно</a></li>
+          <li class="featured-section materials-section">
+            <p>Материалы <a href="blank.html">на любой вкус</a></p>
+          </li>
+          <li class="featured-section instruments-section">
+            <p>Инструмент <a href="blank.html">на все случаи</a></p>
+          </li>
+          <li class="featured-section tech-section">
+            <p>Техника <a href="blank.html">для стройки</a></p>
+          </li>
+          <li class="featured-section discount-section">
+            <p>Скидки 50% <a href="blank.html">на 350 товаров</a></p>
+          </li>
+          <li class="featured-section delivery-section">
+            <p>Доставка <a href="blank.html">бесплатно</a></p>
+          </li>
         </ul>
-        <div>
-          <!-- Н:здесь будет слайдер, перфораторы и дрели-->
-          <article class="featured-unit">
+        <div class="slider">
+          <article class="featured-unit slide slide-1 slide-current">
             <div class="featured-unit-text">
               <h3>Перфораторы</h3>
               <p>Настоящие мужские игрушки</p>
             </div>
             <img src="img/Perforators-slider.jpg" width="620" height="266" alt="Перфораторы">
-            <a class="simple-button" href="catalog.html">Открыть каталог</a>
+            <a class="simple-button open-catalog-button" href="catalog.html">Открыть каталог</a>
           </article>
-          <article class="featured-unit">
+          <article class="featured-unit slide slide-2">
             <div class="featured-unit-text">
               <h3>Дрели</h3>
               <p>Соседям на радость!</p>
             </div>
             <img src="img/Drills-slider.jpg" width="620" height="266" alt="Дрели">
-            <a class="simple-button" href="catalog.html">Открыть каталог</a>
+            <a class="simple-button open-catalog-button" href="catalog.html">Открыть каталог</a>
           </article>
+          <div class="slider-control-dots">
+            <button class="current" aria-label="Первый слайд"></button>
+            <button aria-label="Второй слайд"></button>
+
+          </div>
+          <div class="slider-control-arrows">
+            <button class="back" aria-label="Назад">
+              <svg width="22" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.92.94l2 2.05L4.91 20.44l17.07 17.5-2 2.05L.9 20.44 19.92.94z" fill="#fff" /></svg>
+            </button>
+            <button class="forward" aria-label="Вперед">
+              <svg width="22" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.92.94l2 2.05L4.91 20.44l17.07 17.5-2 2.05L.9 20.44 19.92.94z" fill="#fff" /></svg>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -88,7 +112,7 @@
       <div class="wrapper">
         <div class="section-name">
           <h2>Популярные товары:</h2>
-          <a class="simple-button" href="blank.html">Все популярные товары</a>
+          <a class="simple-button all-popular-items-button" href="blank.html">Все популярные товары</a>
         </div>
         <ul class="popular-items-list">
           <li class="item-card">
@@ -139,13 +163,13 @@
       <div class="wrapper">
         <div class="section-name">
           <h2>Популярные производители:</h2>
-          <a class="simple-button" href="blank.html">Все производители</a>
+          <a class="simple-button all-popular-manufactures-button" href="blank.html">Все производители</a>
         </div>
         <ul class="popular-manufactures-list">
           <li class="manufacturer-card">
             <a href="blank.html">
               <article>
-                <h3>BOSCH</h3>
+                <h3 class="visually-hidden">BOSCH</h3>
                 <img src="img/Bosch.png" width="126" height="37" alt="BOSCH">
               </article>
             </a>
@@ -154,7 +178,7 @@
           <li class="manufacturer-card">
             <a href="blank.html">
               <article>
-                <h3>Makita</h3>
+                <h3 class="visually-hidden">Makita</h3>
                 <img src="img/Makita.png" width="123" height="40" alt="Makita">
               </article>
             </a>
@@ -162,7 +186,7 @@
           <li class="manufacturer-card">
             <a href="blank.html">
               <article>
-                <h3>DeWALT</h3>
+                <h3 class="visually-hidden">DeWALT</h3>
                 <img src="img/DeWalt.png" width="146" height="44" alt="DeWALT">
               </article>
             </a>
@@ -170,7 +194,7 @@
           <li class="manufacturer-card">
             <a href="blank.html">
               <article>
-                <h3>Интерскол</h3>
+                <h3 class="visually-hidden">Интерскол</h3>
                 <img src="img/Interskol.png" width="200" height="75" alt="Интерскол">
               </article>
             </a>
@@ -178,7 +202,7 @@
           <li class="manufacturer-card">
             <a href="blank.html">
               <article>
-                <h3>HITACHI</h3>
+                <h3 class="visually-hidden">HITACHI</h3>
                 <img src="img/Hitachi.png" width="169" height="31" alt="HITACHI">
               </article>
             </a>
@@ -186,7 +210,7 @@
           <li class="manufacturer-card">
             <a href="blank.html">
               <article>
-                <h3>LG</h3>
+                <h3 class="visually-hidden">LG</h3>
                 <img src="img/Lg.png" width="121" height="73" alt="LG">
               </article>
             </a>
@@ -194,7 +218,7 @@
           <li class="manufacturer-card">
             <a href="blank.html">
               <article>
-                <h3>AEG</h3>
+                <h3 class="visually-hidden">AEG</h3>
                 <img src="img/AEG.png" width="151" height="96" alt="AEG">
               </article>
             </a>
@@ -202,7 +226,7 @@
           <li class="manufacturer-card">
             <a href="blank.html">
               <article>
-                <h3>metabo</h3>
+                <h3 class="visually-hidden">metabo</h3>
                 <img src="img/Metabo.png" width="204" height="69" alt="metabo">
               </article>
             </a>
@@ -214,39 +238,44 @@
       <div class="wrapper">
         <div class="service-general">
           <h2 class="section-title">Сервисы</h2>
-          <p class="basic-text">Хороший интернет-магазин отличается от плохого не только ценами!
+          <p class="basic-text">Хороший интернет-магазин отличается от плохого не только ценами!<br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
         </div>
-        <button class="button service-button delivery-button">Доставка</button>
-        <button class="button service-button guarantee-button">Гарантия</button>
-        <button class="button service-button credit-button">Кредит</button>
-        <ul class="services-list">
-          <!--здесь будет слайдер-->
-          <li class="service-subsection delivery-subsection">
-            <h3 class="services-title">Доставка</h3>
-            <p class="basic-text">Мы с удовольствием доставим ваш товар прямо<br>
-              к вашему подъезду совершенно бесплатно!<br>
-              Ведь мы неплохо заработаем,<br>
-              поднимая его на ваш этаж!
-            </p>
-          </li>
-          <li class="service-subsection guarantee-subsection">
-            <h3 class="services-title">Гарантия</h3>
-            <p class="basic-text">
-              Если купленный у нас товар поломается или заискрит,
-              а также в случае пожара, спровоцированного его возгоранием,
-              вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший
-              товар на новый.
-              Дом уж восстановите как-нибудь сами.
-            </p>
-          </li>
-          <li class="service-subsection credit-subsection">
-            <h3 class="services-title">Кредит</h3>
-            <p class="basic-text">Залезть в долговую яму стало проще!
-              Кредитные консультанты придут вам на помощь.</p>
-          </li>
-        </ul>
+        <div class="services-slider">
+          <div class="service-control-buttons">
+            <button class="button service-button delivery-button current">Доставка</button>
+            <button class="button service-button guarantee-button">Гарантия</button>
+            <button class="button service-button credit-button">Кредит</button>
+          </div>
+          <ul class="services-list">
+            <!--здесь будет слайдер-->
+            <li class="service-subsection delivery-subsection service-subsection-current">
+              <h3 class="services-title">Доставка</h3>
+              <p class="basic-text">Мы с удовольствием доставим ваш товар прямо<br>
+                к вашему подъезду совершенно бесплатно!<br>
+                Ведь мы неплохо заработаем,<br>
+                поднимая его на ваш этаж!
+              </p>
+            </li>
+            <li class="service-subsection guarantee-subsection">
+              <h3 class="services-title">Гарантия</h3>
+              <p class="basic-text">
+                Если купленный у нас товар поломается или заискрит,<br>
+                а также в случае пожара, спровоцированного его<br> возгоранием,
+                вы всегда можете быть уверены в нашей<br> гарантии. Мы обменяем сгоревший
+                товар на новый.<br>
+                Дом уж восстановите как-нибудь сами.
+              </p>
+            </li>
+            <li class="service-subsection credit-subsection">
+              <h3 class="services-title">Кредит</h3>
+              <p class="basic-text">Залезть в долговую яму стало проще!<br>
+                Кредитные консультанты придут вам на помощь.</p>
+              <a class="simple-button credit-application-button" href="blank.html">Отправить заявку</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <div class="wrapper about-and-contacts">
@@ -264,15 +293,15 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a class="simple-button" href="blank.html">Подробнее о компании</a>
+        <a class="simple-button about-company-button" href="blank.html">Подробнее о компании</a>
       </section>
       <section class="contacts">
         <h2 class="section-title">Контакты</h2>
-        <p class="basic-text">Вы можете забрать товар сами,
+        <p class="basic-text">Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
         <!--Н:здесь будет карта-->
         <img src="img/map.png" width="300" height="158" alt="Карта офиса по адресу Большая Конюшенная ул., 19">
-        <a class="simple-button" href="blank.html">Заблудились? Напишите нам!</a>
+        <a class="simple-button contact-us-button" href="blank.html">Заблудились? Напишите нам!</a>
       </section>
     </div>
   </main>
