@@ -824,7 +824,6 @@ button:focus {
 
 .services-slider {
   margin-top: 25px;
-  padding-bottom: 55px;
   position: relative;
   display: flex;
 }
@@ -883,6 +882,7 @@ button:focus {
 
 .service-subsection {
   display: none;
+  min-height: 283px;
 }
 
 .service-subsection-current {
@@ -901,45 +901,42 @@ button:focus {
 
 }
 
-.delivery-subsection .services-title {
+.service-subsection .services-title {
   margin-bottom: 30px;
 }
 
 .services-list {
   list-style: none;
   padding: 0;
+  padding-bottom: 4px;
   margin: 0;
   margin-left: 80px;
   margin-top: 44px;
   position: relative;
+  width: 100%;
 }
 
-.delivery-subsection::after {
-  content: "";
-  width: 468px;
-  height: 261px;
+.service-subsection p {
+  width: 330px;
+}
+
+.delivery-subsection {
+
   background-image: url("../img/Delivery.png");
   background-repeat: no-repeat;
-  left: 150px;
-  top: 20px;
-  position: absolute;
-
+  background-position: bottom right;
 }
 
-.guarantee-subsection::after {
-  content: "";
-  width: 468px;
-  height: 261px;
-  background-image: url("../img/Guarantee.png");
+.guarantee-subsection {
+background-image: url("../img/Guarantee.png");
+background-repeat: no-repeat;
+background-position: bottom right;
+}
+
+.credit-subsection {
+  background-image: url("../img/Credit.png");
   background-repeat: no-repeat;
-  left: 238px;
-  top: 0;
-  position: absolute;
-}
-
-.guarantee-subsection .services-title,
-.credit-subsection .services-title {
-  margin-bottom: 25px;
+  background-position: bottom right;
 }
 
 .credit-application-button {
@@ -947,17 +944,6 @@ button:focus {
   display: block;
   text-align: center;
   margin-top: 25px;
-}
-
-.credit-subsection::after {
-  content: "";
-  width: 468px;
-  height: 261px;
-  background-image: url("../img/Credit.png");
-  background-repeat: no-repeat;
-  left: 165px;
-  top: 0;
-  position: absolute;
 }
 
 
@@ -1142,8 +1128,18 @@ background-color: var(--background-light-gray);
 
 .footer-top-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  min-height: 193px;
 }
+
+.logo-and-address {
+  min-width: 325px;
+}
+
+.footer-menu {
+  width: 100%;
+}
+
 .footer-logo {
   background-color: var(--red);
   width: 220px;
@@ -1165,10 +1161,7 @@ background-color: var(--background-light-gray);
 
 .footer-address-tel {
   color: var(--tinted-white-address);
-  order: 3;
   margin-top: 23px;
-  margin-left: 3px;
-  margin-bottom: 54px;
 }
 
 .footer-nav-menu {
@@ -1176,20 +1169,13 @@ background-color: var(--background-light-gray);
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   margin-top: 37px;
-  margin-left: 173px;
-
-
 }
 
 .footer-nav-menu li {
-  margin-right: 58px;
-
-}
-
-.footer-nav-menu li:last-child {
-  margin-right: 0;
+  margin-left: 58px;
 }
 
 .footer-nav-menu a {
@@ -1211,18 +1197,14 @@ background-color: var(--background-light-gray);
   list-style: none;
   margin: 0;
   padding: 0;
-  order: 3;
   display: flex;
-  margin-left: 92px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: 33px;
 }
 
 .footer-submenu li {
-  margin-right: 58px;
-  margin-top: 30px;
-}
-
-.footer-submenu li:last-child {
-  margin-right: 0;
+  margin-left: 59px;
 }
 
 .footer-submenu a {
