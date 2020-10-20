@@ -2175,3 +2175,201 @@ color: var(--white);
   color: var(--red);
   text-decoration: none;
 }
+
+/*Модальные окна*/
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: var(--white);
+  z-index: 10;
+  box-shadow: 0 0 10px -6px;
+
+}
+
+/* Модальное окно Напишите нам */
+.modal-write-us {
+  width: 620px;
+  top: 120px;
+  bottom: auto;
+  padding-top: 46px;
+  display: none;
+}
+
+.modal-write-us input,
+.modal-write-us textarea {
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 24px;
+  padding-top: 7px;
+  padding-left: 12px;
+  padding-bottom: 7px;
+}
+
+.modal-write-us input::placeholder,
+.modal-write-us textarea::placeholder {
+  color: #A9A9A9;
+}
+
+.modal-write-us textarea {
+  height: 114px;
+}
+
+.modal-write-us label {
+  margin-bottom: 11px;
+}
+
+
+.modal-write-us::before {
+  content: "";
+  width: 620px;
+  height: 7px;
+  background-color: var(--red);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contact-fields-wrapper {
+  display: grid;
+  grid-template-columns: 220px 220px;
+  grid-column-gap: 20px;
+  grid-row-gap: 13px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.modal-buttons-wrapper {
+  background-color: #f4f4f4;
+  width: 620px;
+  height: 112px;
+  margin-top: 37px;
+}
+
+.contact-form-submit-button {
+  border: none;
+  width: 460px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 37px;
+
+}
+
+.modal-close {
+  position: absolute;
+  top: 21px;
+  right: 11px;
+  width: 21px;
+  height: 21px;
+  background-image: url('../img/icon-close.svg');
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.contact-form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-text {
+  grid-column: 1 / -1;
+}
+
+
+/* Модальное окно Карта */
+.modal-map {
+  display: none;
+  width: 943px;
+  height: 449px;
+}
+
+.modal-map iframe {
+  border: none;
+}
+
+.modal-map::after {
+  content: "";
+  width: 943px;
+  height: 7px;
+  background-color: var(--red);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*Модальное окно Корзина Уведомление */
+
+.modal-cart-notification {
+  display: none;
+  width: 620px;
+  height: 282px;
+  top: 120px;
+  bottom: auto;
+  left: 30px;
+}
+
+.modal-cart-notification p {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  padding-top: 51px;
+  padding-left: 175px;
+  position: relative;
+}
+
+.modal-cart-notification p::before {
+  content: "";
+  background-image: url('../img/icon-mark.svg');
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  margin-left: -95px;
+  margin-top: -18px;
+}
+.modal-cart-notification::after {
+  content: "";
+  width: 620px;
+  height: 7px;
+  background-color: var(--red);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.complete-order-button {
+  padding-left: 47px;
+  padding-right: 46px;
+  margin-left: 114px;
+  margin-right: 10px;
+  position: absolute;
+  top: 37px;
+
+}
+
+.continue-shopping-button {
+  background-color: var(--white);
+  color: var(--black);
+  border: none;
+  width: 192px;
+  position: absolute;
+  top: 37px;
+  right: 112px;
+  cursor: pointer;
+}
+
+.modal-cart-buttons-wrapper {
+  background-color: #f4f4f4;
+  width: 620px;
+  height: 112px;
+  margin-top: 37px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
