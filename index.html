@@ -101,8 +101,8 @@
             <a class="simple-button open-catalog-button" href="catalog.html">Открыть каталог</a>
           </article>
           <div class="slider-control-dots">
-            <button class="current" aria-label="Первый слайд"></button>
-            <button aria-label="Второй слайд"></button>
+            <button class="slide-dot slide1-dot current" aria-label="Первый слайд"></button>
+            <button class="slide-dot slide2-dot" aria-label="Второй слайд"></button>
 
           </div>
           <div class="slider-control-arrows">
@@ -339,8 +339,9 @@
         <h2 class="section-title">Контакты</h2>
         <p>Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
-        <!--Н:здесь будет карта-->
+        <a href="" class="show-map-link">
         <img src="img/map.png" width="300" height="158" alt="Карта офиса по адресу Большая Конюшенная ул., 19">
+        </a>
         <a class="simple-button contact-us-button" href="blank.html">Заблудились? Напишите нам!</a>
       </section>
     </div>
@@ -421,20 +422,20 @@
   </footer>
   <section class="modal modal-write-us">
     <h2 class="visually-hidden">Напишите нам!</h2>
-    <form method="post">
+    <form class="contact-form" method="post">
       <div class="contact-fields-wrapper">
       <div class="contact-form-field contact-form-name">
 
         <label for="username-field">Ваше имя:</label>
-        <input type="text" name="username" id="username-field" placeholder="Имя Фамилия">
+        <input class="username" type="text" name="username" id="username-field" placeholder="Имя Фамилия">
       </div>
       <div class="contact-form-field contact-form-email">
         <label for="email-field">Ваш e-mail:</label>
-        <input type="email" name="email" id="email-field" placeholder="email@example.com">
+        <input class="email" type="email" name="email" id="email-field" placeholder="email@example.com">
       </div>
       <div class="contact-form-field contact-form-text">
         <label for="text-field">Текст письма:</label>
-        <textarea name="text" id="text-field" placeholder="В свободной форме"></textarea>
+        <textarea class="text-field" name="text" id="text-field" placeholder="В свободной форме"></textarea>
       </div>
     </div>
     <div class="modal-buttons-wrapper">
@@ -449,6 +450,7 @@
 
      <button class="modal-close" aria-label="Закрыть"></button>
   </section>
+<script src="js/script.js"></script>
 </body>
 
 </html>
