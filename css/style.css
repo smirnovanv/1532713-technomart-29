@@ -81,7 +81,7 @@ height: auto;
  min-width: 960px;
  margin: 0;
  padding: 0;
- font-family: Cuprum, sans-serif;
+ font-family: "Cuprum", "Arial Narrow", sans-serif;
  font-size: 18px;
 line-height: 24px;
 font-weight: 400;
@@ -215,7 +215,7 @@ min-height: 100%;
 .search {
   background-color: var(--dark-gray);
   color: var(--white);
-  font-family: Cuprum, sans-serif;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-size: 18px;
   line-height: 24px;
   border: none;
@@ -254,7 +254,7 @@ min-height: 100%;
 .search:focus {
   background-color: var(--white);
   color: var(--black);
-  font-family: Cuprum, sans-serif;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-size: 18px;
   line-height: 24px;
   outline: none;
@@ -268,7 +268,7 @@ min-height: 100%;
 
 .search::placeholder {
   color: var(--white);
-  font-family: Cuprum, sans-serif;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-size: 18px;
   line-height: 24px;
 }
@@ -720,7 +720,7 @@ color: var(--medium-gray);
   content: "NEW";
   color: white;
   background-color: var(--red);
-  font-family: Cuprum, sans-serif;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -923,7 +923,7 @@ color: var(--medium-gray);
 }
 
 .item-card {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -1035,7 +1035,7 @@ button:focus {
   background-color: var(--green);
   border: none;
   text-transform: uppercase;
-  font-family: Cuprum, sans-serif;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-size: 14px;
   line-height: 18px;
   height: 38px;
@@ -1076,7 +1076,7 @@ button:focus {
   border: 3px solid var(--green);
   border-radius: 2px;
   text-transform: uppercase;
-  font-family: Cuprum, sans-serif;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-size: 14px;
   line-height: 18px;
   height: 38px;
@@ -1206,7 +1206,7 @@ button:focus {
 
 .service-general p {
   color: var(--black);
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   padding: 0;
@@ -1214,7 +1214,7 @@ button:focus {
 }
 
 .section-title {
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
@@ -1257,7 +1257,7 @@ button:focus {
   background-color: var(--blue-gray);
   border: none;
   color: var(--white);
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
@@ -1295,7 +1295,7 @@ button:focus {
 
 .service-subsection p {
   color: var(--black);
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   padding: 0;
@@ -1308,7 +1308,7 @@ button:focus {
 
 .services-title {
   color: var(--blue-gray);
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
@@ -1372,7 +1372,7 @@ background-position: bottom right;
 
 .about-company p {
   color: var(--black);
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   padding: 0;
@@ -1419,7 +1419,7 @@ background-position: bottom right;
 
 .contacts p {
   color: var(--black);
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   padding: 0;
@@ -1509,7 +1509,7 @@ margin-top: -2px;
 .breadcrumbs-element {
 text-decoration: none;
 color: var(--black);
-font-family: PT Sans;
+font-family: "PT Sans", "Arial", sans-serif;
 font-size: 13px;
 line-height: 18px;
 text-transform: uppercase;
@@ -1547,7 +1547,7 @@ height: 89px;
 .filter {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 17px;
   line-height: 18px;
@@ -1555,7 +1555,7 @@ height: 89px;
 }
 
 .filter-name {
-font-family: PT Sans;
+font-family: "PT Sans", "Arial", sans-serif;
 font-weight: normal;
 font-size: 13px;
 line-height: 18px;
@@ -1828,7 +1828,7 @@ input::-webkit-inner-spin-button {
   margin-top: 38px;
   background-color: var(--white);
   border: 1px solid var(--lighter-medium-gray);
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
@@ -1849,7 +1849,7 @@ input::-webkit-inner-spin-button {
   border-radius: 3px;
   display: flex;
   flex-wrap: wrap;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
@@ -1859,7 +1859,7 @@ input::-webkit-inner-spin-button {
 }
 
 .sorting-name {
-font-family: PT Sans;
+font-family: "PT Sans", "Arial", sans-serif;
 font-weight: normal;
 font-size: 13px;
 line-height: 18px;
@@ -1997,7 +1997,7 @@ margin-right: 140px;
 }
 
 .pagination {
-font-family: PT Sans;
+font-family: "PT Sans", "Arial", sans-serif;
 font-weight: normal;
 font-size: 13px;
 line-height: 18px;
@@ -2063,7 +2063,7 @@ padding-bottom: 69px;
 
 .about-unit-items p {
   color: var(--black);
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   padding: 0;
@@ -2302,7 +2302,7 @@ color: var(--white);
 
 .modal-write-us input,
 .modal-write-us textarea {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   padding-top: 7px;
