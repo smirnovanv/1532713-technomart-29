@@ -7,16 +7,18 @@ let secondSlide = document.querySelector('.slide-2');
 
 
 firstslideDot.onclick = function () {
-firstslideDot.classList.add('current');
-secondslideDot.classList.remove('current');
-firstSlide.classList.add('slide-current');
-secondSlide.classList.remove('slide-current')}
+  firstslideDot.classList.add('current');
+  secondslideDot.classList.remove('current');
+  firstSlide.classList.add('slide-current');
+  secondSlide.classList.remove('slide-current')
+}
 
 secondslideDot.onclick = function () {
-secondslideDot.classList.add('current');
-firstslideDot.classList.remove('current');
-secondSlide.classList.add('slide-current');
-firstSlide.classList.remove('slide-current')}
+  secondslideDot.classList.add('current');
+  firstslideDot.classList.remove('current');
+  secondSlide.classList.add('slide-current');
+  firstSlide.classList.remove('slide-current')
+}
 
 
 let forward = document.querySelector('.forward');
@@ -91,7 +93,7 @@ const emailField = contactPopup.querySelector('.email');
 const textField = contactPopup.querySelector('.text-field')
 
 var isStorageSupport = true;
-var storage = "";
+var storage = '';
 
 try {
   storage = localStorage.getItem('login');
@@ -108,27 +110,27 @@ contactButton.addEventListener('click', function (evt) {
     usernameField.value = storage;
     emailField.focus();
   } else {
-  usernameField.focus();
+    usernameField.focus();
   }
 });
 
 contactClose.addEventListener('click', function (evt) {
   evt.preventDefault();
   contactPopup.classList.remove('modal-show');
-  contactPopup.classList.remove("modal-error");
+  contactPopup.classList.remove('modal-error');
 });
 
 contactForm.addEventListener('submit', function (evt) {
   if (!usernameField.value || !emailField.value || !textField.value) {
     evt.preventDefault();
-    contactPopup.classList.remove("modal-error");
+    contactPopup.classList.remove('modal-error');
     contactPopup.offsetWidth = contactPopup.offsetWidth;
     contactPopup.classList.add('modal-error');
 
   } else {
     if (isStorageSupport) {
-    localStorage.setItem('login', usernameField.value);
-   }
+      localStorage.setItem('login', usernameField.value);
+    }
   }
 });
 

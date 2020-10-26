@@ -8,7 +8,7 @@ const continueShopping = cartPopup.querySelector('.continue-shopping-button');
 for (let purchaseButton of purchaseButtons) {
   purchaseButton.onclick = function (evt) {
     evt.preventDefault();
-  cartPopup.classList.add('modal-show');
+    cartPopup.classList.add('modal-show');
   }
 }
 
