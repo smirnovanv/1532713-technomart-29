@@ -115,7 +115,7 @@ img {
 .header-logo {
   background-color: var(--red);
   width: 220px;
-  box-shadow: inset 0px -5px 0px var(--transparent-gray024);
+  box-shadow: inset 0 -5px 0 var(--transparent-gray024);
   height: 47px;
   z-index: 1;
   display: flex;
@@ -140,7 +140,7 @@ img {
 .marks {
   width: 120px;
   padding-top: 10px;
-  padding-left: 30px;
+  padding-left: 43px;
   padding-right: 1px;
   position: relative;
   display: block;
@@ -154,7 +154,7 @@ img {
   background-repeat: no-repeat;
   background-position: 0 0;
   position: absolute;
-  left: 6px;
+  left: 19px;
   top: 13px;
   opacity: 0.3;
 }
@@ -368,6 +368,7 @@ input[type="search"]::-moz-placeholder {
   line-height: 24px;
   margin-left: 88px;
   margin-top: 3px;
+  width: 252px;
 }
 
 .login {
@@ -460,7 +461,7 @@ input[type="search"]::-moz-placeholder {
   color: var(--white);
   background-color: var(--blue-gray);
   margin-bottom: 60px;
-  box-shadow: inset 0px -5px 0px var(--dark-gray);
+  box-shadow: inset 0 -5px 0 var(--dark-gray);
 }
 
 .header-nav-menu-list {
@@ -849,7 +850,7 @@ input[type="search"]::-moz-placeholder {
   margin: 0;
   position: absolute;
   top: 120px;
-  filter: drop-shadow(0px 4px 4px var(--transparent-gray025));
+  filter: drop-shadow(0 4px 4px var(--transparent-gray025));
 }
 
 .back {
@@ -1007,20 +1008,24 @@ button:focus {
 }
 
 .purchase-button {
+  text-decoration: none;
   color: var(--white);
   background-color: var(--green);
-  border: none;
   text-transform: uppercase;
   font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  height: 38px;
-  width: 135px;
+  font-weight: 400;
+  display: block;
+  height: 28px;
+  width: 120px;
   margin-top: 38px;
-  box-shadow: inset 0px -3px 0px var(--darkest-green);
+  margin-left: 41px;
+  box-shadow: inset 0 -3px 0 var(--darkest-green);
   border-radius: 2px;
   position: relative;
-  padding-left: 20px;
+  padding-left: 15px;
+  padding-top: 10px;
 }
 
 .purchase-button::before {
@@ -1039,10 +1044,12 @@ button:focus {
 .purchase-button:hover,
 .purchase-button:focus {
   background-color: var(--bright-green);
+  color: var(--white);
 }
 
 .purchase-button:active {
   background-color: var(--dark-green);
+  color: var(--white);
 }
 
 .mark-button {
@@ -1058,7 +1065,6 @@ button:focus {
   width: 135px;
   margin-top: 10px;
   box-sizing: border-box;
-  border-radius: 2px;
 }
 
 .mark-button:hover,
@@ -1089,7 +1095,7 @@ button:focus {
 
 .item-card:hover,
 .item-card article:focus {
-  box-shadow: 0px 4px 20px var(--transparent-gray015);
+  box-shadow: 0 4px 20px var(--transparent-gray015);
 }
 
 /*Популярные производители*/
@@ -1103,7 +1109,7 @@ button:focus {
   column-gap: 20px;
   row-gap: 20px;
   margin-top: 20px;
-  margin-bottom: 71px;
+  margin-bottom: 70px;
 }
 
 .all-popular-manufactures-button {
@@ -1128,7 +1134,7 @@ button:focus {
 }
 
 .manufacturer-card:hover {
-  box-shadow: 0px 4px 20px var(--transparent-gray015);
+  box-shadow: 0 4px 20px var(--transparent-gray015);
 }
 
 .manufacturer-card:active {
@@ -1165,7 +1171,7 @@ button:focus {
 }
 
 .aeg img {
-  margin-top: -6xp;
+  margin-top: -6px;
 }
 
 .metabo img {
@@ -1239,7 +1245,7 @@ button:focus {
   line-height: 30px;
   width: 240px;
   height: 61px;
-  box-shadow: 0px 1px 0px var(--dark-gray), inset 0px 1px 0px var(--lighter-dark-gray);
+  box-shadow: 0 1px 0 var(--dark-gray), inset 0 1px 0 var(--lighter-dark-gray);
   text-align: left;
   padding-left: 22px;
   margin-bottom: 1px;
@@ -1254,13 +1260,13 @@ button:focus {
 .service-button:active {
   background-color: var(--white);
   color: var(--blue-gray);
-  box-shadow: 0px 1px 0px var(--white), inset 0px 1px 0px var(--white);
+  box-shadow: 0 1px 0 var(--white), inset 0 1px 0 var(--white);
 }
 
 .service-button.current {
   background-color: var(--white);
   color: var(--blue-gray);
-  box-shadow: 0px 1px 0px var(--white), inset 0px 1px 0px var(--white);
+  box-shadow: 0 1px 0 var(--white), inset 0 1px 0 var(--white);
 }
 
 .service-subsection {
@@ -2064,7 +2070,7 @@ input::-webkit-inner-spin-button {
   background-color: var(--red);
   width: 220px;
   height: 68px;
-  box-shadow: inset 0px -5px 0px var(--transparent-gray024);
+  box-shadow: inset 0 -5px 0 var(--transparent-gray024);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2255,7 +2261,7 @@ input::-webkit-inner-spin-button {
   margin: auto;
   background-color: var(--white);
   z-index: 10;
-  box-shadow: 0px 4px 20px var(--transparent-gray015);
+  box-shadow: 0 4px 20px var(--transparent-gray015);
 }
 
 /* Модальное окно Напишите нам */
