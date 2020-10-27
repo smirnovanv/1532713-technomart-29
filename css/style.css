@@ -277,7 +277,6 @@ input[type="search"]::-moz-placeholder {
   display: none;
 }
 
-
 .order {
   background-color: var(--green);
   width: 150px;
@@ -354,13 +353,11 @@ input[type="search"]::-moz-placeholder {
   top: 11px;
 }
 
-
 .header-tel:hover,
 .header-tel:active {
   color: var(--red);
   text-decoration: none;
 }
-
 
 .header-address {
   color: var(--blue-gray);
@@ -518,6 +515,10 @@ input[type="search"]::-moz-placeholder {
   position: relative;
 }
 
+.my-orders span {
+  position: relative;
+}
+
 .my-orders:hover,
 .my-orders:focus {
   color: var(--red);
@@ -531,7 +532,8 @@ input[type="search"]::-moz-placeholder {
   margin-right: 28px;
 }
 
-.decor-point {
+.my-orders span:first-child::after {
+  content: "";
   width: 4px;
   height: 4px;
   background: linear-gradient(0deg, var(--blue-gray), var(--blue-gray)), var(--white);
@@ -541,12 +543,12 @@ input[type="search"]::-moz-placeholder {
   top: 8px;
 }
 
-.my-orders:hover .decor-point,
-.my-orders:focus .decor-point {
+.my-orders:hover span:first-child::after,
+.my-orders:focus span:first-child::after {
   background: var(--red);
 }
 
-.my-orders:active .decor-point {
+.my-orders:active span:first-child::after {
   background: var(--medium-gray);
 }
 
@@ -725,7 +727,6 @@ input[type="search"]::-moz-placeholder {
   background-repeat: no-repeat;
   background-position-y: 34px;
   background-position-x: 194px;
-
 }
 
 .tech-section {
@@ -816,7 +817,6 @@ input[type="search"]::-moz-placeholder {
 .simple-button:active {
   background-color: var(--darkest-red);
 }
-
 
 .slider-control-dots {
   position: absolute;
@@ -1296,7 +1296,6 @@ button:focus {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-
 }
 
 .service-subsection .services-title {
@@ -1483,7 +1482,6 @@ margin-top: -2px;
 .breadcrumbs-current::after {
   display: none;
 }
-
 
 .breadcrumbs-element {
   text-decoration: none;
@@ -1738,7 +1736,6 @@ input::-webkit-inner-spin-button {
   background-image: url("../img/checkbox-on-disabled.svg");
 }
 
-
 .filter-power label {
   padding-left: 35px;
   margin-top: 23px;
@@ -1983,7 +1980,6 @@ input::-webkit-inner-spin-button {
   padding-left: 32px;
   padding-right: 31px;
 }
-
 
 .pagination li {
   margin-right: 10px;
@@ -2286,7 +2282,6 @@ input::-webkit-inner-spin-button {
   margin-bottom: 11px;
 }
 
-
 .modal-write-us::before {
   content: "";
   width: 620px;
@@ -2413,7 +2408,6 @@ input::-webkit-inner-spin-button {
   margin-right: 10px;
   position: absolute;
   top: 37px;
-
 }
 
 .continue-shopping-button {
