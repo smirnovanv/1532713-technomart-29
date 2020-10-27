@@ -1819,7 +1819,8 @@ input::-webkit-inner-spin-button {
   background-color: var(--beige);
   border-radius: 3px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 13px;
@@ -1838,15 +1839,23 @@ input::-webkit-inner-spin-button {
   margin: 0;
   padding: 0;
   margin-left: 20px;
-  margin-right: 140px;
+  width: 180px;
+  flex-shrink: 0;
 }
 
 .sorting-types {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
+  margin-left: 42px;
+  margin-right: 23px;
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sorting-types li:nth-child(2) {
+  margin-left: 2px;
 }
 
 .sorting-types a {
@@ -1874,21 +1883,9 @@ input::-webkit-inner-spin-button {
   border: none;
 }
 
-.sorting-types li {
-  margin-right: 65px;
-}
-
-.sorting-types li:first-child {
-  margin-left: auto;
-  margin-right: 70px;
-}
-
-.sorting-types li:last-child {
-  margin-right: 0;
-}
-
 .sorting-controls {
   display: none;
+  flex-shrink: 0;
 }
 
 .sorting-controls.current {
@@ -1898,53 +1895,46 @@ input::-webkit-inner-spin-button {
 .sorting-arrow {
   border: none;
   background: none;
-  position: relative;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
 }
 
-.low-first::before {
-  content: "";
+.low-first {
   background-image: url("../img/sorting-arrow-gray.svg");
+  background-repeat: no-repeat;
   width: 11px;
   height: 10px;
-  position: absolute;
-  top: -7px;
-  left: 47px;
+  margin-left: 14px;
 }
 
-.low-first:hover::before,
-.low-first:focus::before {
-  background-image: url("../img/sorting-arrow-black.svg");
-}
-
-.low-first:active::before {
-  background-image: url("../img/sorting-arrow-red.svg");
-}
-
-.low-first.current::before {
-  background-image: url("../img/sorting-arrow-red.svg");
-}
-
-.high-first::before {
-  content: "";
+.high-first {
   background-image: url("../img/sorting-arrow-gray.svg");
+  background-repeat: no-repeat;
   width: 11px;
   height: 10px;
-  position: absolute;
   transform: rotate(180deg);
-  top: -7px;
-  left: 63px;
+  margin-right: 14px;
+  margin-left: 18px;
 }
 
-.high-first:hover::before,
-.high-first:focus::before {
+.low-first:hover,
+.low-first:focus {
   background-image: url("../img/sorting-arrow-black.svg");
 }
 
-.high-first:active::before {
+.low-first:active,
+.low-first.current {
   background-image: url("../img/sorting-arrow-red.svg");
 }
 
-.high-first.current::before {
+.high-first:hover,
+.high-first:focus {
+  background-image: url("../img/sorting-arrow-black.svg");
+}
+
+.high-first:active,
+.high-first.current {
   background-image: url("../img/sorting-arrow-red.svg");
 }
 
@@ -1977,7 +1967,7 @@ input::-webkit-inner-spin-button {
   margin-top: 58px;
 }
 
-.page-number {
+.pagination a {
   text-decoration: none;
   color: var(--black);
   background-color: var(--white);
@@ -1989,7 +1979,7 @@ input::-webkit-inner-spin-button {
   padding-right: 15px;
 }
 
-.pagination li:last-child .page-number {
+.page-number:last-child a {
   padding-left: 32px;
   padding-right: 31px;
 }
@@ -2003,20 +1993,20 @@ input::-webkit-inner-spin-button {
   margin-right: 0;
 }
 
-.page-number:hover,
-.page-number:focus {
+.pagination a:hover,
+.pagination a:focus {
   color: var(--black);
   border: 1px solid var(--medium-gray);
   border-radius: 2px;
 }
 
-.page-number:active {
+.pagination a:active {
   color: var(--black);
   border: 1px solid var(--red);
   border-radius: 2px;
 }
 
-.page-number.current {
+.page-number.current a {
   background-color: var(--red);
   color: var(--white);
   border: none;
